@@ -21,8 +21,7 @@
   <entry>
     <title>test-page</title>
     <url>/yongjuns-hub/2023/03/13/test-page/</url>
-    <content><![CDATA[<h1 id="一级标题"><a href="#一级标题" class="headerlink" title="一级标题"></a>一级标题</h1><p>内容</p>
-<h2 id="二级标题"><a href="#二级标题" class="headerlink" title="二级标题"></a>二级标题</h2><ul>
+    <content><![CDATA[<h2 id="二级标题"><a href="#二级标题" class="headerlink" title="二级标题"></a>二级标题</h2><ul>
 <li>内容</li>
 </ul>
 <h3 id="三级标题"><a href="#三级标题" class="headerlink" title="三级标题"></a>三级标题</h3><ol>
