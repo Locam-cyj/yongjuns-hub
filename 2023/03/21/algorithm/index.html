@@ -14,18 +14,18 @@
     
     <!--- Seo Part-->
     
-    <link rel="canonical" href="https://locam-cyj.github.io/yongjuns-hub/2023/03/13/test-page/"/>
+    <link rel="canonical" href="https://locam-cyj.github.io/yongjuns-hub/2023/03/21/algorithm/"/>
     <meta name="robots" content="index,follow">
     <meta name="googlebot" content="index,follow">
     <meta name="revisit-after" content="1 days">
     <meta property="og:type" content="article">
-    <meta property="og:title" content="test-page">
+    <meta property="og:title" content="二分查找">
     <meta property="og:description" content="Hexo Theme Redefine">
-    <meta property="og:url" content="https://locam-cyj.github.io/yongjuns-hub2023/03/13/test-page/">
+    <meta property="og:url" content="https://locam-cyj.github.io/yongjuns-hub2023/03/21/algorithm/">
     
     <meta property="og:site_name" content="Locam&#39;s Castle">
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="test-page">
+    <meta name="twitter:title" content="二分查找">
     <meta name="twitter:description" content="Hexo Theme Redefine">
     <meta name="twitter:image" content="https://locam-cyj.github.io/img/280x256.svg">
     <!--- Icon Part-->
@@ -36,7 +36,7 @@
     
     <title>
         
-            test-page -
+            二分查找 -
         
         Locam&#39;s Castle
     </title>
@@ -352,10 +352,9 @@
         <div class="article-content-container">
 
             
-                      
+            
                 <div class="article-title">
-                    <img src="https://locam-cyj.github.io/img/hello-world.png" alt="test-page" />
-                    <h1 class="article-title-cover">test-page</h1>
+                    <h1 class="article-title-regular">二分查找</h1>
                 </div>
             
                 
@@ -377,15 +376,15 @@
                             <div class="article-meta-info">
     <span class="article-date article-meta-item">
         <i class="fa-regular fa-pen-fancy"></i>&nbsp;
-        <span class="pc">2023-03-13 23:15:46</span>
-        <span class="mobile">2023-03-13 23:15</span>
+        <span class="pc">2023-03-21 23:12:59</span>
+        <span class="mobile">2023-03-21 23:12</span>
         <span class="hover-info">Created</span>
     </span>
     
         <span class="article-date article-meta-item">
             <i class="fa-regular fa-wrench"></i>&nbsp;
-            <span class="pc">2023-03-13 23:51:09</span>
-            <span class="mobile">2023-03-13 23:51</span>
+            <span class="pc">2023-03-22 00:51:35</span>
+            <span class="mobile">2023-03-22 00:51</span>
             <span class="hover-info">Updated</span>
         </span>
     
@@ -396,7 +395,7 @@
             <ul>
                 
                     <li>
-                        <a href="/yongjuns-hub/categories/Test/">Test</a>&nbsp;
+                        <a href="/yongjuns-hub/categories/Algorithm/">Algorithm</a>&nbsp;
                     </li>
                 
             </ul>
@@ -408,7 +407,7 @@
             <ul>
                 
                     <li>
-                        <a href="/yongjuns-hub/tags/test/">test</a>&nbsp;
+                        <a href="/yongjuns-hub/tags/BinarySearch/">BinarySearch</a>&nbsp;
                     </li>
                 
             </ul>
@@ -418,12 +417,12 @@
     
     
         <span class="article-wordcount article-meta-item">
-            <i class="fa-regular fa-file-word"></i>&nbsp;<span>37 Words</span>
+            <i class="fa-regular fa-file-word"></i>&nbsp;<span>1k Words</span>
         </span>
     
     
         <span class="article-min2read article-meta-item">
-            <i class="fa-regular fa-clock"></i>&nbsp;<span>1 Mins</span>
+            <i class="fa-regular fa-clock"></i>&nbsp;<span>4 Mins</span>
         </span>
     
     
@@ -439,18 +438,29 @@
             
 
             <div class="article-content markdown-body">
-                <h2 id="二级标题"><a href="#二级标题" class="headerlink" title="二级标题"></a>二级标题</h2><ul>
-<li>内容</li>
-</ul>
-<h3 id="三级标题"><a href="#三级标题" class="headerlink" title="三级标题"></a>三级标题</h3><ol>
-<li>内容</li>
-<li>内容</li>
-</ol>
-<h4 id="四级标题"><a href="#四级标题" class="headerlink" title="四级标题"></a>四级标题</h4><blockquote>
-<p>区块内容<br>区块内容</p>
+                <h2 id="关于二分查找"><a href="#关于二分查找" class="headerlink" title="关于二分查找"></a>关于二分查找</h2><ul>
+<li>二分查找的实现思想可谓是十分简单，它的查找过程如下：<blockquote>
+<p>首先，假设表中元素是按升序排列，将表中间位置记录的关键字与查找关键字比较，如果两者相等，则查找成功；否则利用中间位置记录将表分成前、后两个子表，如果中间位置记录的关键字大于查找关键字，则进一步查找前一子表，否则进一步查找后一子表。重复以上过程，直到找到满足条件的记录，使查找成功，或直到子表不存在为止，此时查找不成功。–摘自<a class="link"   target="_blank" rel="noopener" href="https://baike.baidu.com/item/%E4%BA%8C%E5%88%86%E6%9F%A5%E6%89%BE/10628618" >百度百科 <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p>
 </blockquote>
-<h5 id="五级标题"><a href="#五级标题" class="headerlink" title="五级标题"></a>五级标题</h5><ul>
-<li><em>python代码</em><div class="highlight-container" data-rel="Py"><figure class="iseeu highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">print</span>(<span class="string">&#x27;hello world&#x27;</span>)</span><br></pre></td></tr></table></figure></div></li>
+</li>
+</ul>
+<h3 id="代码实现"><a href="#代码实现" class="headerlink" title="代码实现"></a>代码实现</h3><ul>
+<li><p>我们先给出比较容易理解的伪代码以及Java和python3实现：</p>
+<div class="tabs" id="tab-1.1.1"><ul class="nav-tabs"><li class="tab active"><a class="#1.1.1-1">伪代码</a></li><li class="tab"><a class="#1.1.1-2">Java实现</a></li><li class="tab"><a class="#1.1.1-3">python3实现</a></li><li class="tab"><a class="#1.1.1-4">JavaScript实现</a></li></ul><div class="tab-content"><div class="tab-pane active" id="1.1.1-1"><div class="highlight-container" data-rel="Text"><figure class="iseeu highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">int binarySearch(ary, target)&#123;</span><br><span class="line">    left = 0, right = ary.length - 1; // 初始左边界为下标0，右边界为下标数组.长度 - 1(即数组最后一个元素)</span><br><span class="line">    while(left &lt;= right)&#123;             // 当左边界和右边界交叉时退出循环</span><br><span class="line">        mid = (left + right) / 2;     // 中间位置</span><br><span class="line">        if(ary[mid] &lt; target)&#123;        // 当中间值小于目标值时，所以下一步要到(mid, right]中去找</span><br><span class="line">            left = mid + 1;           // 因此把left更新为mid + 1</span><br><span class="line">        &#125;</span><br><span class="line">        else if(ary[mid] &gt; target)&#123;</span><br><span class="line">            right = mid - 1;          // 同理，若中间值大于目标值，则将right更新为mid - 1</span><br><span class="line">        &#125;</span><br><span class="line">        else &#123;</span><br><span class="line">            return mid;               // 当mid处的值既不大于也不小于target的时候，则找到目标值，返回下标mid</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    return -1;                        // 循环执行完毕还没找到，则返回-1表示没找到目标值</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></div></div><div class="tab-pane" id="1.1.1-2"><div class="highlight-container" data-rel="Java"><figure class="iseeu highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">void</span> <span class="type">int</span> <span class="title function_">binarySearch</span><span class="params">(<span class="type">int</span>[] ary, <span class="type">int</span> target)</span>&#123;</span><br><span class="line">    <span class="type">int</span> <span class="variable">l</span> <span class="operator">=</span> <span class="number">0</span>, r = ary.length - <span class="number">1</span>;</span><br><span class="line">    <span class="keyword">while</span>(l &lt;= r)&#123;</span><br><span class="line">        <span class="type">int</span> <span class="variable">mid</span> <span class="operator">=</span> l + (r - l) / <span class="number">2</span>;    <span class="comment">//这么写可以防止l+r对于int类型溢出</span></span><br><span class="line">        <span class="keyword">if</span>(ary[mid] &lt; target)&#123;        </span><br><span class="line">            left = mid + <span class="number">1</span>;           </span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">else</span> <span class="keyword">if</span>(ary[mid] &gt; target)&#123;</span><br><span class="line">            right = mid - <span class="number">1</span>;          </span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">else</span> &#123;</span><br><span class="line">            <span class="keyword">return</span> mid;</span><br><span class="line">        &#125;          </span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> -<span class="number">1</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></div></div><div class="tab-pane" id="1.1.1-3"><div class="highlight-container" data-rel="Py"><figure class="iseeu highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">def</span> <span class="title function_">bin_Search</span>(<span class="params">ary: <span class="type">List</span>[], target: <span class="built_in">int</span></span>) -&gt; <span class="built_in">int</span>:</span><br><span class="line">    l, r = <span class="number">0</span>, <span class="built_in">len</span>(ary)</span><br><span class="line">    <span class="keyword">while</span> l &lt;= r:</span><br><span class="line">        mid = (l + r) // <span class="number">2</span>          <span class="comment"># python3的int理论上讲可以无限大，不需要担心溢出</span></span><br><span class="line">        <span class="keyword">if</span> ary[mid] &lt; target:</span><br><span class="line">            l = mid + <span class="number">1</span></span><br><span class="line">        <span class="keyword">elif</span> ary[mid] &gt; target:</span><br><span class="line">            r = mid - <span class="number">1</span></span><br><span class="line">        <span class="keyword">else</span>:</span><br><span class="line">            <span class="keyword">return</span> mid</span><br><span class="line">    <span class="keyword">return</span> -<span class="number">1</span></span><br></pre></td></tr></table></figure></div></div><div class="tab-pane" id="1.1.1-4"><div class="highlight-container" data-rel="Javascript"><figure class="iseeu highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@param</span> &#123;<span class="type">number[]</span>&#125; <span class="variable">ary</span></span></span><br><span class="line"><span class="comment"> * <span class="doctag">@return</span> &#123;<span class="type">number</span>&#125;</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="keyword">const</span> <span class="title function_">binarySearch</span> = (<span class="params"></span>) =&gt; &#123;</span><br><span class="line">    <span class="keyword">let</span> l = <span class="number">0</span>, r = ary.<span class="property">length</span>;</span><br><span class="line">    <span class="keyword">while</span>(l &lt;= r)&#123;</span><br><span class="line">        <span class="keyword">let</span> mid = l + <span class="title class_">Math</span>.<span class="title function_">floor</span>((r - l) / <span class="number">2</span>);</span><br><span class="line">        <span class="keyword">if</span>(ary[mid] &lt; target)&#123;        </span><br><span class="line">            left = mid + <span class="number">1</span>;           </span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">else</span> <span class="keyword">if</span>(ary[mid] &gt; target)&#123;</span><br><span class="line">            right = mid - <span class="number">1</span>;          </span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">else</span> &#123;</span><br><span class="line">            <span class="keyword">return</span> mid;</span><br><span class="line">        &#125;          </span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> -<span class="number">1</span>;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure></div></div></div></div>
+</li>
+<li><p>因为二分查找每次查找都会使查找长度减半，第一次为n，第二次为n&#x2F;2，第三次为n&#x2F;2^2，…n&#x2F;2^k，…，其中k为循环次数，令n&#x2F;^k&#x3D;1，则k&#x3D;log2n，所以二分查找时间复杂度为O(logn)。</p>
+</li>
+<li><p>由于使用了常数级辅助空间(l，r和mid)，所以空间复杂度为O(1)。</p>
+</li>
+</ul>
+<h3 id="细节问题"><a href="#细节问题" class="headerlink" title="细节问题"></a>细节问题</h3><ul>
+<li>关于循环不变量：上面while循环中的条件是*l&lt;&#x3D;r*，也就是说我们的查找区间是一个闭区间[l,r]，在整个循环过程中都是如此(循环不变)，所以l和r都可以取到，因此l&#x3D;r时是有意义的；当mid处的值小于target时，由于ary[mid]是有意义的，所以下次循环我们比较的区间变为[mid + 1, r]而不是[mid, r];当ary[mid]&gt;target时同理。</li>
+</ul>
+<h2 id="结语"><a href="#结语" class="headerlink" title="结语"></a>结语</h2><ul>
+<li>到这里是不是对于二分查找有了更清晰的理解了呢，可以自己在本地或者推荐到<a class="link"   target="_blank" rel="noopener" href="https://c.runoob.com/" >菜鸟教程 <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a>的在线测试环境中用几个例子测试一下。</li>
+<li>一般来说，绝大多数情况下使用二分查找需要数组有序，特殊情况可以将数组用其他方法指标分类时可以无序。</li>
+<li>二分查找的区间还可以写为(l,r]，这种写法的循环条件以及判断条件和更新语句怎么写就可参照上面的分析方法去做，具体此处不再赘述。</li>
+<li>后续会更新具体的一道二分查找变体的题目，敬请期待。</li>
 </ul>
 
             </div>
@@ -459,11 +469,11 @@
                 <div class="post-copyright-info">
                     <div class="article-copyright-info-container">
     <ul>
-        <li>Post title：test-page</li>
+        <li>Post title：二分查找</li>
         <li>Post author：Locam</li>
-        <li>Create time：2023-03-13 23:15:46</li>
+        <li>Create time：2023-03-21 23:12:59</li>
         <li>
-            Post link：https://locam-cyj.github.io/yongjuns-hub/2023/03/13/test-page/
+            Post link：https://locam-cyj.github.io/yongjuns-hub/2023/03/21/algorithm/
         </li>
         <li>
             Copyright Notice：All articles in this blog are licensed under <a class="license" target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh">BY-NC-SA</a> unless stating additionally.
@@ -478,7 +488,7 @@
                 <ul class="post-tags-box">
                     
                         <li class="tag-item">
-                            <a href="/yongjuns-hub/tags/test/">#test</a>&nbsp;
+                            <a href="/yongjuns-hub/tags/BinarySearch/">#BinarySearch</a>&nbsp;
                         </li>
                     
                 </ul>
@@ -489,29 +499,14 @@
             
                 <div class="article-nav">
                     
-                        <div class="article-prev">
-                            <a class="prev"
-                            rel="prev"
-                            href="/yongjuns-hub/2023/03/21/algorithm/"
-                            >
-                                <span class="left arrow-icon flex-center">
-                                    <i class="fa-solid fa-chevron-left"></i>
-                                </span>
-                                <span class="title flex-center">
-                                    <span class="post-nav-title-item">二分查找</span>
-                                    <span class="post-nav-item">Prev posts</span>
-                                </span>
-                            </a>
-                        </div>
-                    
                     
                         <div class="article-next">
                             <a class="next"
                             rel="next"
-                            href="/yongjuns-hub/2023/03/01/hello-world/"
+                            href="/yongjuns-hub/2023/03/13/test-page/"
                             >
                                 <span class="title flex-center">
-                                    <span class="post-nav-title-item">Hello World</span>
+                                    <span class="post-nav-title-item">test-page</span>
                                     <span class="post-nav-item">Next posts</span>
                                 </span>
                                 <span class="right arrow-icon flex-center">
@@ -576,8 +571,8 @@
                 <div class="post-toc-wrap">
     <div class="post-toc">
         <div class="toc-title">On this page</div>
-        <div class="page-title">test-page</div>
-        <ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BA%8C%E7%BA%A7%E6%A0%87%E9%A2%98"><span class="nav-text">二级标题</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%B8%89%E7%BA%A7%E6%A0%87%E9%A2%98"><span class="nav-text">三级标题</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%9B%9B%E7%BA%A7%E6%A0%87%E9%A2%98"><span class="nav-text">四级标题</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#%E4%BA%94%E7%BA%A7%E6%A0%87%E9%A2%98"><span class="nav-text">五级标题</span></a></li></ol></li></ol></li></ol></li></ol>
+        <div class="page-title">二分查找</div>
+        <ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%85%B3%E4%BA%8E%E4%BA%8C%E5%88%86%E6%9F%A5%E6%89%BE"><span class="nav-text">关于二分查找</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%BB%A3%E7%A0%81%E5%AE%9E%E7%8E%B0"><span class="nav-text">代码实现</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%BB%86%E8%8A%82%E9%97%AE%E9%A2%98"><span class="nav-text">细节问题</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%BB%93%E8%AF%AD"><span class="nav-text">结语</span></a></li></ol>
 
     </div>
 </div>
