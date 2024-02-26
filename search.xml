@@ -77,4 +77,550 @@
         <tag>BinarySearch</tag>
       </tags>
   </entry>
+  <entry>
+    <title>Linux基本命令</title>
+    <url>/yongjuns-hub/2024/02/20/Linux%E5%9F%BA%E6%9C%AC%E5%91%BD%E4%BB%A4/</url>
+    <content><![CDATA[<h3 id="文件目录类命令"><a href="#文件目录类命令" class="headerlink" title="文件目录类命令"></a>文件目录类命令</h3><blockquote>
+<p>pwd(print working directory ) 打印当前工作目录的绝对路径</p>
+</blockquote>
+<ul>
+<li><p>基本语法</p>
+<ul>
+<li>pwd    （功能描述：显示当前工作目录的绝对路径）</li>
+</ul>
+</li>
+<li><p>案例实操</p>
+<ul>
+<li>显示当前工作目录的绝对路径<div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="code"><pre><span class="line">[root@centos100 ~]# pwd</span><br><span class="line">/root</span><br></pre></td></tr></table></figure></div></li>
+</ul>
+</li>
+</ul>
+<blockquote>
+<p>ls(list) 列出目录内容</p>
+</blockquote>
+<ul>
+<li><p>基本语法</p>
+<ul>
+<li>ls [选项] [目录或是文件]</li>
+</ul>
+</li>
+<li><p>选项说明</p>
+<table>
+<thead>
+<tr>
+<th>选项</th>
+<th>功能</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>-a</td>
+<td>全部的文件，连同隐藏档( 开头为 . 的文件) 一起列出来(常用)</td>
+</tr>
+<tr>
+<td>-l</td>
+<td>长数据串列出，包含文件的属性与权限等等数据；(常用)</td>
+</tr>
+</tbody></table>
+</li>
+<li><p>显示说明</p>
+<p>每行列出的信息依次是： 文件类型与权限 链接数 文件属主 文件属组 文件大小用byte来表示 建立或最近修改的时间 名字&amp;#x20;</p>
+</li>
+<li><p>实操案例</p>
+<ul>
+<li>查看当前目录的所有内容信息<div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="code"><pre><span class="line">[root@centos100 ~]# ls -al</span><br><span class="line">总用量 80</span><br><span class="line">dr-xr-x---. 15 root root 4096 11月  7 19:08 .</span><br><span class="line">dr-xr-xr-x. 17 root root  224 11月  3 20:18 ..</span><br><span class="line">-rw-------.  1 root root 1533 11月  3 20:19 anaconda-ks.cfg</span><br><span class="line">-rw-------.  1 root root 1996 11月  7 18:54 .bash_history</span><br><span class="line">-rw-r--r--.  1 root root   18 12月 29 2013 .bash_logout</span><br><span class="line">-rw-r--r--.  1 root root  176 12月 29 2013 .bash_profile</span><br><span class="line">-rw-r--r--.  1 root root  176 12月 29 2013 .bashrc</span><br><span class="line">drwx------. 15 root root 4096 11月  6 14:03 .cache</span><br><span class="line">drwxr-xr-x. 16 root root 4096 11月  6 17:00 .config</span><br><span class="line">-rw-r--r--.  1 root root  100 12月 29 2013 .cshrc</span><br><span class="line">drwx------.  3 root root   25 11月  3 20:25 .dbus</span><br><span class="line">-rw-------.  1 root root   16 11月  3 20:28 .esd_auth</span><br><span class="line">-rw-------.  1 root root 1550 11月  7 19:04 .ICEauthority</span><br><span class="line">-rw-r--r--.  1 root root 1581 11月  3 20:25 initial-setup-ks.cfg</span><br><span class="line">drwx------.  3 root root   19 11月  3 20:28 .local</span><br><span class="line">drwx------.  5 root root   66 11月  3 20:29 .mozilla</span><br><span class="line">-rw-r--r--.  1 root root 6939 11月  6 15:35 smartd1.conf</span><br><span class="line">-rw-r--r--.  1 root root 6792 11月  6 15:48 smartd.conf</span><br><span class="line">-rw-r--r--.  1 root root  129 12月 29 2013 .tcshrc</span><br><span class="line">-rw-------.  1 root root 4518 11月  7 19:08 .viminfo</span><br><span class="line">-rw-------.  1 root root  165 11月  7 18:55 .Xauthority</span><br></pre></td></tr></table></figure></div></li>
+</ul>
+</li>
+</ul>
+<blockquote>
+<p>cd(Change Directory)切换路径</p>
+</blockquote>
+<ul>
+<li><p>基本语法</p>
+<ul>
+<li>cd [参数]</li>
+</ul>
+</li>
+<li><p>参数说明</p>
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th>功能</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>cd 绝对路径</td>
+<td><strong>切换路径</strong></td>
+</tr>
+<tr>
+<td>cd 相对路径</td>
+<td><strong>切换路径</strong></td>
+</tr>
+<tr>
+<td>cd ~或者cd</td>
+<td>回到自己的家目录</td>
+</tr>
+<tr>
+<td>cd -</td>
+<td>回到上一次所在目录</td>
+</tr>
+<tr>
+<td>cd ..</td>
+<td>回到当前目录的上一级目录</td>
+</tr>
+<tr>
+<td>cd -P</td>
+<td>跳转到实际物理路径，而非快捷方式路径</td>
+</tr>
+<tr>
+<td>cd &#x2F;</td>
+<td>回到系统根目录</td>
+</tr>
+</tbody></table>
+</li>
+<li><p>实操案例</p>
+<ul>
+<li>使用绝对路径切换到root目录<div class="highlight-container" data-rel="Text"><figure class="iseeu highlight text"><table><tr><td class="code"><pre><span class="line">[root@centos100 ~]# cd /root/</span><br></pre></td></tr></table></figure></div></li>
+<li>使用相对路径切换到“公共的”目录<div class="highlight-container" data-rel="Text"><figure class="iseeu highlight text"><table><tr><td class="code"><pre><span class="line">[root@centos100 ~]# cd 公共的/</span><br></pre></td></tr></table></figure></div></li>
+<li>表示回到自己的家目录，亦即是 &#x2F;root 这个目录<div class="highlight-container" data-rel="Text"><figure class="iseeu highlight text"><table><tr><td class="code"><pre><span class="line">[root@centos100 公共的]# cd ~</span><br></pre></td></tr></table></figure></div></li>
+<li>cd- 回到上一次所在目录<div class="highlight-container" data-rel="Text"><figure class="iseeu highlight text"><table><tr><td class="code"><pre><span class="line">[root@centos100 ~]# cd -</span><br></pre></td></tr></table></figure></div></li>
+<li>表示回到当前目录的上一级目录，亦即是 “&#x2F;root&#x2F;公共的”的上一级目录的意思；<div class="highlight-container" data-rel="Text"><figure class="iseeu highlight text"><table><tr><td class="code"><pre><span class="line">[root@centos100 公共的]# cd ..</span><br></pre></td></tr></table></figure></div></li>
+</ul>
+</li>
+</ul>
+<blockquote>
+<p>mkdir(Make directory) 建立目录</p>
+</blockquote>
+<ul>
+<li><p>基本语法</p>
+<ul>
+<li>mkdir [选项] 要创建的目录</li>
+</ul>
+</li>
+<li><p>选项说明</p>
+<table>
+<thead>
+<tr>
+<th>选项</th>
+<th>功能</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>-p</td>
+<td>创建多层目录</td>
+</tr>
+</tbody></table>
+</li>
+<li><p>实操案例</p>
+<ul>
+<li>创建一个目录<div class="highlight-container" data-rel="Text"><figure class="iseeu highlight text"><table><tr><td class="code"><pre><span class="line">[root@centos100 ~]# mkdir xiyou</span><br><span class="line"></span><br><span class="line">[root@centos100 ~]# mkdir xiyou/yaojing</span><br></pre></td></tr></table></figure></div></li>
+<li>创建一个多级目录<div class="highlight-container" data-rel="Text"><figure class="iseeu highlight text"><table><tr><td class="code"><pre><span class="line">[root@centos100 ~]# mkdir -p xiyou/qujing/meihouwang</span><br></pre></td></tr></table></figure></div></li>
+</ul>
+</li>
+</ul>
+<blockquote>
+<p>rmdir(Remove directory) 删除目录</p>
+</blockquote>
+<ul>
+<li><p>基本语法</p>
+<ul>
+<li>rmdir 要删除的<strong>空目录</strong></li>
+</ul>
+</li>
+<li><p>实操案例</p>
+<ul>
+<li>删除一个空的文件夹<div class="highlight-container" data-rel="Text"><figure class="iseeu highlight text"><table><tr><td class="code"><pre><span class="line">[root@centos100 ~]# rmdir xiyou/qujing/meihouwang</span><br></pre></td></tr></table></figure></div></li>
+</ul>
+</li>
+</ul>
+<blockquote>
+<p>&amp;#x20;touch 创建空文件</p>
+</blockquote>
+<ul>
+<li><p>基本语法</p>
+<ul>
+<li>touch 文件名称</li>
+</ul>
+</li>
+<li><p>实操案例</p>
+<div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="code"><pre><span class="line">[root@centos100 ~]# touch xiyou/qujing/sunwukong.txt</span><br></pre></td></tr></table></figure></div></li>
+</ul>
+<blockquote>
+<p>cp 复制文件或目录</p>
+</blockquote>
+<ul>
+<li><p>基本语法</p>
+<ul>
+<li>cp [选项] source dest             （功能描述：复制source文件到dest）</li>
+</ul>
+</li>
+<li><p>选项说明</p>
+<table>
+<thead>
+<tr>
+<th>选项</th>
+<th>功能</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>-r</td>
+<td>递归复制整个文件夹</td>
+</tr>
+</tbody></table>
+</li>
+<li><p>参数说明</p>
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th>功能</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>source</td>
+<td>源文件</td>
+</tr>
+<tr>
+<td>dest</td>
+<td>目标文件</td>
+</tr>
+</tbody></table>
+</li>
+<li><p>实操案例</p>
+<ul>
+<li>复制文件<div class="highlight-container" data-rel="Text"><figure class="iseeu highlight text"><table><tr><td class="code"><pre><span class="line">[root@centos100 ~]# cp xiyou/qujing/suwukong.txt xiyou/mingjie/</span><br></pre></td></tr></table></figure></div></li>
+<li>递归复制整个文件夹<div class="highlight-container" data-rel="Text"><figure class="iseeu highlight text"><table><tr><td class="code"><pre><span class="line">[root@centos100 ~]# cp -r a/b/ ./</span><br></pre></td></tr></table></figure></div></li>
+</ul>
+</li>
+<li><p>注意事项</p>
+<p>&amp;#x20;强制覆盖不提示的方法：\cp</p>
+</li>
+</ul>
+<blockquote>
+<p>rm移除文件或者目录</p>
+</blockquote>
+<ul>
+<li><p>基本语法</p>
+<ul>
+<li>rm [选项] deleteFile</li>
+</ul>
+</li>
+<li><p>选项说明</p>
+<table>
+<thead>
+<tr>
+<th>选项</th>
+<th>功能</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>-r</td>
+<td>递归删除目录所有内容</td>
+</tr>
+<tr>
+<td>-f</td>
+<td>强制删除,不提示用户进行确认</td>
+</tr>
+<tr>
+<td>-v</td>
+<td>显示指令的详细执行过程</td>
+</tr>
+</tbody></table>
+</li>
+<li><p>实操案例</p>
+<ul>
+<li>删除目录中的内容<div class="highlight-container" data-rel="Text"><figure class="iseeu highlight text"><table><tr><td class="code"><pre><span class="line">[root@centos100 ~]# rm xiyou/mingjie/sunwukong.txt</span><br></pre></td></tr></table></figure></div></li>
+<li>递归删除目录中所有内容<div class="highlight-container" data-rel="Text"><figure class="iseeu highlight text"><table><tr><td class="code"><pre><span class="line">[root@centos100 ~]# rm -rf  qujing/</span><br></pre></td></tr></table></figure></div></li>
+</ul>
+</li>
+</ul>
+<blockquote>
+<p>mv移动文件与目录或重命名</p>
+</blockquote>
+<ul>
+<li>基本语法<ul>
+<li>重命名&amp;#x20;<div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="code"><pre><span class="line">mv oldNameFile newNameFile</span><br></pre></td></tr></table></figure></div></li>
+<li>移动文件&amp;#x20;<div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="code"><pre><span class="line">mv /temp/movefile /targetFolder</span><br></pre></td></tr></table></figure></div></li>
+</ul>
+</li>
+<li>实操案例<ul>
+<li>重命名<div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="code"><pre><span class="line">[root@centos100 ~]# mv xiyou/qujing/suwukong.txt xiyou/qujing/houge.txt</span><br></pre></td></tr></table></figure></div></li>
+<li>移动文件<div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="code"><pre><span class="line">[root@centos100 ~]# mv xiyou/qujing/houge.txt ./</span><br></pre></td></tr></table></figure></div></li>
+</ul>
+</li>
+</ul>
+<blockquote>
+<p>cat查看文件内容</p>
+</blockquote>
+<ul>
+<li><p>基本语法</p>
+<ul>
+<li>cat  [选项] 文件     查看文件内容,从第一行开始显示</li>
+</ul>
+</li>
+<li><p>选项说明</p>
+<table>
+<thead>
+<tr>
+<th>选项</th>
+<th>功能描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>- n</td>
+<td>显示所有行的行号,包括空行</td>
+</tr>
+</tbody></table>
+</li>
+<li><p>经验技巧</p>
+<div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="code"><pre><span class="line">一般查看比较小的文件,一屏幕能显示全的</span><br></pre></td></tr></table></figure></div></li>
+<li><p>实操案例</p>
+<ul>
+<li>查看文件内容并显示行号<div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="code"><pre><span class="line">[atguigu@centos100 ~]$ cat -n houge.txt </span><br></pre></td></tr></table></figure></div></li>
+</ul>
+</li>
+</ul>
+<blockquote>
+<p>more 文件分屏查看器</p>
+</blockquote>
+<ul>
+<li>基本语法<div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="code"><pre><span class="line">more 要查看的文件</span><br><span class="line"></span><br></pre></td></tr></table></figure></div>
+<div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="code"><pre><span class="line">more指令是一个基于VI编辑器的文本过滤器，它以全屏幕的方式按页显示文本文件的内容。more指令中内置了若干快捷键，详见操作说明。</span><br></pre></td></tr></table></figure></div></li>
+<li>操作说明<table>
+<thead>
+<tr>
+<th>操作</th>
+<th>功能说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>空白键 (space)</td>
+<td>代表向下翻一页；</td>
+</tr>
+<tr>
+<td>Enter</td>
+<td>代表向下翻『一行』；</td>
+</tr>
+<tr>
+<td>q</td>
+<td>代表立刻离开 more ，不再显示该文件内容。</td>
+</tr>
+<tr>
+<td>Ctrl+F</td>
+<td>向下滚动一屏</td>
+</tr>
+<tr>
+<td>Ctrl+B</td>
+<td>返回上一屏</td>
+</tr>
+<tr>
+<td>&#x3D;</td>
+<td>输出当前行的行号</td>
+</tr>
+<tr>
+<td>:f</td>
+<td>输出文件名和当前行的行号</td>
+</tr>
+</tbody></table>
+</li>
+<li>实操案例<ul>
+<li>（1）采用more查看文件<div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="code"><pre><span class="line">[root@centos100 ~]# more smartd.conf</span><br></pre></td></tr></table></figure></div></li>
+</ul>
+</li>
+</ul>
+<blockquote>
+<p>less 分屏显示文件内容</p>
+</blockquote>
+<ul>
+<li>基本语法<div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="code"><pre><span class="line">less指令用来分屏查看文件内容，它的功能与more指令类似，但是比more指令更加强大，支持各种显示终端。less指令在显示文件内容时，并不是一次将整个文件加载之后才显示，而是根据显示需要加载内容，对于显示大型文件具有较高的效率。</span><br><span class="line"></span><br><span class="line">less 要查看的文件</span><br></pre></td></tr></table></figure></div></li>
+<li>操作说明<table>
+<thead>
+<tr>
+<th>操作</th>
+<th>功能说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>空白键</td>
+<td>向下翻动一页；</td>
+</tr>
+<tr>
+<td>[pagedown]</td>
+<td>向下翻动一页</td>
+</tr>
+<tr>
+<td>[pageup]</td>
+<td>向上翻动一页；</td>
+</tr>
+<tr>
+<td>&#x2F;字串</td>
+<td>向下搜寻『字串』的功能；n：向下查找；N：向上查找；</td>
+</tr>
+<tr>
+<td>?字串</td>
+<td>向上搜寻『字串』的功能；n：向上查找；N：向下查找；</td>
+</tr>
+<tr>
+<td>q</td>
+<td>离开 less 这个程序；</td>
+</tr>
+</tbody></table>
+</li>
+<li>实操案例<ul>
+<li>（1）采用less查看文件<div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="code"><pre><span class="line">[root@centos100 ~]# less smartd.conf</span><br></pre></td></tr></table></figure></div></li>
+</ul>
+</li>
+</ul>
+<blockquote>
+<p>head显示文件头部内容</p>
+</blockquote>
+<ul>
+<li>基本语法<div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="code"><pre><span class="line">head用于显示文件的开头部分内容，默认情况下head指令显示文件的前10行内容。</span><br><span class="line"></span><br><span class="line">head 文件      （功能描述：查看文件头10行内容）</span><br><span class="line">head -n 5 文件   （功能描述：查看文件头5行内容，5可以是任意行数）</span><br></pre></td></tr></table></figure></div></li>
+<li>选项说明<table>
+<thead>
+<tr>
+<th>选项</th>
+<th>功能</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>-n &lt;行数&gt;</td>
+<td>指定显示头部内容的行数</td>
+</tr>
+</tbody></table>
+</li>
+<li>实操案例<ul>
+<li>（1）查看文件的头2行<div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="code"><pre><span class="line">[root@centos100 ~]# head -n 2 smartd.conf</span><br></pre></td></tr></table></figure></div></li>
+</ul>
+</li>
+</ul>
+<blockquote>
+<p>tail 输出文件尾部内容</p>
+</blockquote>
+<ul>
+<li>基本语法<div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="code"><pre><span class="line">tail用于输出文件中尾部的内容，默认情况下tail指令显示文件的后10行内容。</span><br><span class="line">（1）tail 文件          （功能描述：查看文件后10行内容）</span><br><span class="line">（2）tail -n 5 文件     （功能描述：查看文件后5行内容，5可以是任意行数）</span><br><span class="line">（3）tail -f 文件      （功能描述：实时追踪该文档的所有更新）</span><br></pre></td></tr></table></figure></div></li>
+<li>选项说明<table>
+<thead>
+<tr>
+<th>选项</th>
+<th>功能</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>-n&lt;行数&gt;</td>
+<td>输出文件尾部n行内容</td>
+</tr>
+<tr>
+<td>-f</td>
+<td>显示文件最新追加的内容，监视文件变化</td>
+</tr>
+</tbody></table>
+</li>
+<li>实操案例<ul>
+<li>（1）查看文件头1行内容<div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="code"><pre><span class="line">[root@centos100 ~]# tail -n 1 smartd.conf </span><br></pre></td></tr></table></figure></div></li>
+<li>（2）实时追踪该档的所有更新<div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="code"><pre><span class="line">[root@centos100 ~]# tail -f houge.txt</span><br></pre></td></tr></table></figure></div></li>
+</ul>
+</li>
+</ul>
+<blockquote>
+<p>echo 打印信息</p>
+</blockquote>
+<ul>
+<li>基本语法<div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="code"><pre><span class="line">echo输出内容到控制台  System.out.println();</span><br><span class="line"></span><br><span class="line">echo [选项] [输出内容]</span><br></pre></td></tr></table></figure></div></li>
+<li>选项说明<table>
+<thead>
+<tr>
+<th>选项</th>
+<th>功能</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>-e</td>
+<td>支持反斜线控制的字符转换</td>
+</tr>
+<tr>
+<td>控制字符</td>
+<td>作用</td>
+</tr>
+<tr>
+<td>—-</td>
+<td>———–</td>
+</tr>
+<tr>
+<td>\\</td>
+<td>输出\本身</td>
+</tr>
+<tr>
+<td>\n</td>
+<td>换行符</td>
+</tr>
+<tr>
+<td>\t</td>
+<td>制表符，也就是Tab键</td>
+</tr>
+</tbody></table>
+</li>
+<li>实操案例<ul>
+<li>(1) 打印文字信息<div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="code"><pre><span class="line">[atguigu@centos100 ~]$ echo &quot;hello\tworld&quot;</span><br><span class="line">hello\tworld</span><br><span class="line">[atguigu@centos100 ~]$ echo -e &quot;hello\tworld&quot;</span><br><span class="line">hello   world</span><br></pre></td></tr></table></figure></div></li>
+<li>(2) 打印环境变量<div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="code"><pre><span class="line">[atguigu@centos100 ~]$ echo $PATH</span><br></pre></td></tr></table></figure></div></li>
+</ul>
+</li>
+</ul>
+<blockquote>
+<p>&gt; 覆盖和&gt;&gt;追加</p>
+</blockquote>
+<ul>
+<li>基本语法<div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="code"><pre><span class="line">（1）ll &gt;文件       （功能描述：列表的内容写入文件a.txt中（**覆盖写**））</span><br><span class="line">（2）ll &gt;&gt;文件      （功能描述：列表的内容**追加**到文件aa.txt的末尾）</span><br><span class="line">（3）cat 文件1 &gt; 文件2 （功能描述：将文件1的内容覆盖到文件2）</span><br><span class="line">（4）echo “内容” &gt;&gt; 文件</span><br></pre></td></tr></table></figure></div></li>
+<li>实操案例<ul>
+<li>（1）将ls查看信息写入到文件中<div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="code"><pre><span class="line">[root@centos100 ~]# ls -l&gt;houge.txt</span><br></pre></td></tr></table></figure></div></li>
+<li>（2）将ls查看信息追加到文件中<div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="code"><pre><span class="line">[root@centos100 ~]# ls -l&gt;&gt;houge.txt</span><br></pre></td></tr></table></figure></div></li>
+<li>（3）采用echo将hello单词追加到文件中<div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="code"><pre><span class="line">[root@centos100 ~]# echo hello&gt;&gt;houge.txt</span><br></pre></td></tr></table></figure></div></li>
+</ul>
+</li>
+</ul>
+<blockquote>
+<p>ln创建链接和软连接</p>
+</blockquote>
+<ul>
+<li>基本语法<div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="code"><pre><span class="line">链接表示目标资源的另外的访问方式,表示一种路径</span><br><span class="line">软链接也称为符号链接，类似于windows里的快捷方式，有自己的数据块，主要存放了链接其他文件的路径。</span><br><span class="line">ln [-s] [原文件或目录] [链接名]       （功能描述：给原文件创建一个链接）</span><br></pre></td></tr></table></figure></div></li>
+<li>选项说明<table>
+<thead>
+<tr>
+<th>选项</th>
+<th>功能</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>-s</td>
+<td>创建的链接为 软连接</td>
+</tr>
+</tbody></table>
+</li>
+<li>经验技巧<div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="code"><pre><span class="line">删除软链接： rm -rf 软链接名，而不是rm -rf 软链接名/</span><br><span class="line">查询：通过ll就可以查看，列表属性第1位是l，尾部会有位置指向。</span><br></pre></td></tr></table></figure></div></li>
+<li>实操案例<ul>
+<li>（1）创建软连接<div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="code"><pre><span class="line">[root@centos100 ~]# mv houge.txt xiyou/qujing/</span><br><span class="line">[root@centos100 ~]# ln -s /root/xiyou/qujing/houge.txt /root/houzi</span><br><span class="line">[root@centos100 ~]# ll</span><br><span class="line">lrwxrwxrwx. 1 root  root   20 6月 17 12:56 houzi -&gt; xiyou/qujing/houge.txt</span><br></pre></td></tr></table></figure></div></li>
+<li>（2）删除软连接<div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="code"><pre><span class="line">[root@centos100 ~]# rm -rf houzi</span><br></pre></td></tr></table></figure></div></li>
+<li>（3）进入软连接实际物理路径<div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="code"><pre><span class="line">[root@centos100 ~]# ln -s xiyou/qujing/ ./qujing</span><br><span class="line">[root@centos100 ~]# cd -P qujing/</span><br></pre></td></tr></table></figure></div></li>
+</ul>
+</li>
+</ul>
+<blockquote>
+<p>history查看历史命令</p>
+</blockquote>
+<ul>
+<li>基本语法<div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="code"><pre><span class="line">history                    （功能描述：查看已经执行过历史命令）</span><br></pre></td></tr></table></figure></div></li>
+<li>实操案例<ul>
+<li>（1）查看已经执行过的历史命令<div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="code"><pre><span class="line">[root@centos100 test1]# history</span><br></pre></td></tr></table></figure></div></li>
+<li>(2)   &#x2F;root&#x2F;.bash_history文件中也是历史命令<div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="code"><pre><span class="line">less /root/.bash_history</span><br></pre></td></tr></table></figure></div></li>
+</ul>
+</li>
+</ul>
+]]></content>
+      <categories>
+        <category>Linux</category>
+      </categories>
+      <tags>
+        <tag>Linux</tag>
+      </tags>
+  </entry>
 </search>

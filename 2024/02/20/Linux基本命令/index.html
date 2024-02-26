@@ -17,22 +17,22 @@
     
     <!--- Seo Part-->
     
-    <link rel="canonical" href="https://locam-cyj.github.io/yongjuns-hub/2023/03/21/algorithm/"/>
+    <link rel="canonical" href="https://locam-cyj.github.io/yongjuns-hub/2024/02/20/linux基本命令/"/>
     <meta name="robots" content="index,follow">
     <meta name="googlebot" content="index,follow">
     <meta name="revisit-after" content="1 days">
     
-        <meta name="description" content="二分查找虽简单但老是写不对？原因在这里！">
+        <meta name="description" content="Linux基本命令-文件目录类命令">
 <meta property="og:type" content="article">
-<meta property="og:title" content="二分查找">
-<meta property="og:url" content="https://locam-cyj.github.io/yongjuns-hub/2023/03/21/algorithm/index.html">
+<meta property="og:title" content="Linux基本命令">
+<meta property="og:url" content="https://locam-cyj.github.io/yongjuns-hub/2024/02/20/Linux%E5%9F%BA%E6%9C%AC%E5%91%BD%E4%BB%A4/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="二分查找虽简单但老是写不对？原因在这里！">
+<meta property="og:description" content="Linux基本命令-文件目录类命令">
 <meta property="og:locale" content="en_US">
-<meta property="article:published_time" content="2023-03-21T15:12:59.000Z">
-<meta property="article:modified_time" content="2023-03-21T17:50:56.265Z">
+<meta property="article:published_time" content="2024-02-20T14:27:17.000Z">
+<meta property="article:modified_time" content="2024-02-26T13:51:22.663Z">
 <meta property="article:author" content="John Doe">
-<meta property="article:tag" content="BinarySearch">
+<meta property="article:tag" content="Linux">
 <meta name="twitter:card" content="summary">
     
     
@@ -45,7 +45,7 @@
     
     <title>
         
-            二分查找 -
+            Linux基本命令 -
         
         Locam&#39;s Castle
     </title>
@@ -596,10 +596,10 @@
             
                 
                 
-                <img src="https://locam-cyj.github.io/img/BinarySearch.png" alt="二分查找" class="w-full h-60 sm:h-72 md:h-80 object-cover sm:rounded-t-large dark:brightness-75"/>
+                <img src="https://locam.fun/img/Linux.jpg" alt="Linux基本命令" class="w-full h-60 sm:h-72 md:h-80 object-cover sm:rounded-t-large dark:brightness-75"/>
                 
                 <div class="w-full flex items-center absolute bottom-0 justify-start">
-                    <h1 class="article-title-cover text-center mx-6 my-6 text-second-text-color bg-background-color-transparent px-4 py-3 text-3xl sm:text-4xl md:text-5xl font-bold backdrop-blur-lg rounded-xl border border-border-color ">二分查找</h1>
+                    <h1 class="article-title-cover text-center mx-6 my-6 text-second-text-color bg-background-color-transparent px-4 py-3 text-3xl sm:text-4xl md:text-5xl font-bold backdrop-blur-lg rounded-xl border border-border-color ">Linux基本命令</h1>
                 </div>
             
             </div>
@@ -620,15 +620,15 @@
                         <div class="article-meta-info">
     <span class="article-date article-meta-item">
         <i class="fa-regular fa-pen-fancy"></i>&nbsp;
-        <span class="desktop">2023-03-21 23:12:59</span>
-        <span class="mobile">2023-03-21 23:12:59</span>
+        <span class="desktop">2024-02-20 22:27:17</span>
+        <span class="mobile">2024-02-20 22:27:17</span>
         <span class="hover-info">Created</span>
     </span>
     
         <span class="article-date article-meta-item">
             <i class="fa-regular fa-wrench"></i>&nbsp;
-            <span class="desktop">2023-03-22 01:50:56</span>
-            <span class="mobile">2023-03-22 01:50:56</span>
+            <span class="desktop">2024-02-26 21:51:22</span>
+            <span class="mobile">2024-02-26 21:51:22</span>
             <span class="hover-info">Updated</span>
         </span>
     
@@ -642,7 +642,7 @@
                     
                         
                         <li>
-                            <a href="/yongjuns-hub/categories/Algorithm/">Algorithm</a>&nbsp;
+                            <a href="/yongjuns-hub/categories/Linux/">Linux</a>&nbsp;
                         </li>
                     
                     
@@ -656,7 +656,7 @@
             <ul>
                 
                     <li>
-                        <a href="/yongjuns-hub/tags/BinarySearch/">BinarySearch</a>&nbsp;
+                        <a href="/yongjuns-hub/tags/Linux/">Linux</a>&nbsp;
                     </li>
                 
             </ul>
@@ -666,12 +666,12 @@
     
     
         <span class="article-wordcount article-meta-item">
-            <i class="fa-regular fa-typewriter"></i>&nbsp;<span>1k Words</span>
+            <i class="fa-regular fa-typewriter"></i>&nbsp;<span>2.5k Words</span>
         </span>
     
     
         <span class="article-min2read article-meta-item">
-            <i class="fa-regular fa-clock"></i>&nbsp;<span>4 Mins</span>
+            <i class="fa-regular fa-clock"></i>&nbsp;<span>10 Mins</span>
         </span>
     
     
@@ -690,29 +690,540 @@
 
 
         <div class="article-content markdown-body px-2 sm:px-6 md:px-8 pb-8">
-            <h2 id="关于二分查找"><a href="#关于二分查找" class="headerlink" title="关于二分查找"></a>关于二分查找</h2><ul>
-<li>二分查找的实现思想可谓是十分简单，它的查找过程如下：<blockquote>
-<p>首先，假设表中元素是按升序排列，将表中间位置记录的关键字与查找关键字比较，如果两者相等，则查找成功；否则利用中间位置记录将表分成前、后两个子表，如果中间位置记录的关键字大于查找关键字，则进一步查找前一子表，否则进一步查找后一子表。重复以上过程，直到找到满足条件的记录，使查找成功，或直到子表不存在为止，此时查找不成功。–摘自<a class="link"   target="_blank" rel="noopener" href="https://baike.baidu.com/item/%E4%BA%8C%E5%88%86%E6%9F%A5%E6%89%BE/10628618" >百度百科 <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p>
+            <h3 id="文件目录类命令"><a href="#文件目录类命令" class="headerlink" title="文件目录类命令"></a>文件目录类命令</h3><blockquote>
+<p>pwd(print working directory ) 打印当前工作目录的绝对路径</p>
 </blockquote>
+<ul>
+<li><p>基本语法</p>
+<ul>
+<li>pwd    （功能描述：显示当前工作目录的绝对路径）</li>
+</ul>
+</li>
+<li><p>案例实操</p>
+<ul>
+<li>显示当前工作目录的绝对路径<div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">[root@centos100 ~]# pwd</span><br><span class="line">/root</span><br></pre></td></tr></table></figure></div></li>
+</ul>
 </li>
 </ul>
-<h3 id="代码实现"><a href="#代码实现" class="headerlink" title="代码实现"></a>代码实现</h3><ul>
-<li>我们先给出比较容易理解的伪代码以及Java和python3和JavaScript实现：</li>
-</ul>
-<div class="tabs" id="tab-first"><ul class="nav-tabs"><li class="tab active"><a class="#first-1">伪代码</a></li><li class="tab"><a class="#first-2">Java实现</a></li><li class="tab"><a class="#first-3">python3实现</a></li><li class="tab"><a class="#first-4">JavaScript实现</a></li></ul><div class="tab-content"><div class="tab-pane active" id="first-1"><div class="highlight-container" data-rel="Text"><figure class="iseeu highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">int binarySearch(ary, target)&#123;</span><br><span class="line">    left = 0, right = ary.length - 1; // 初始左边界为下标0，右边界为下标数组.长度 - 1(即数组最后一个元素)</span><br><span class="line">    while(left &lt;= right)&#123;             // 当左边界和右边界交叉时退出循环</span><br><span class="line">        mid = (left + right) / 2;     // 中间位置</span><br><span class="line">        if(ary[mid] &lt; target)&#123;        // 当中间值小于目标值时，所以下一步要到(mid, right]中去找</span><br><span class="line">            left = mid + 1;           // 因此把left更新为mid + 1</span><br><span class="line">        &#125;</span><br><span class="line">        else if(ary[mid] &gt; target)&#123;</span><br><span class="line">            right = mid - 1;          // 同理，若中间值大于目标值，则将right更新为mid - 1</span><br><span class="line">        &#125;</span><br><span class="line">        else &#123;</span><br><span class="line">            return mid;               // 当mid处的值既不大于也不小于target的时候，则找到目标值，返回下标mid</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    return -1;                        // 循环执行完毕还没找到，则返回-1表示没找到目标值</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></div></div><div class="tab-pane" id="first-2"><div class="highlight-container" data-rel="Java"><figure class="iseeu highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="type">int</span> <span class="title function_">binarySearch</span><span class="params">(<span class="type">int</span>[] ary, <span class="type">int</span> target)</span>&#123;</span><br><span class="line">    <span class="type">int</span> <span class="variable">l</span> <span class="operator">=</span> <span class="number">0</span>, r = ary.length - <span class="number">1</span>;</span><br><span class="line">    <span class="keyword">while</span>(l &lt;= r)&#123;</span><br><span class="line">        <span class="type">int</span> <span class="variable">mid</span> <span class="operator">=</span> l + (r - l) / <span class="number">2</span>;    <span class="comment">//这么写可以防止l+r对于int类型溢出</span></span><br><span class="line">        <span class="keyword">if</span>(ary[mid] &lt; target)&#123;        </span><br><span class="line">            left = mid + <span class="number">1</span>;           </span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">else</span> <span class="keyword">if</span>(ary[mid] &gt; target)&#123;</span><br><span class="line">            right = mid - <span class="number">1</span>;          </span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">else</span> &#123;</span><br><span class="line">            <span class="keyword">return</span> mid;</span><br><span class="line">        &#125;          </span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> -<span class="number">1</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></div></div><div class="tab-pane" id="first-3"><div class="highlight-container" data-rel="Py"><figure class="iseeu highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">def</span> <span class="title function_">bin_Search</span>(<span class="params">ary: <span class="type">List</span>[], target: <span class="built_in">int</span></span>) -&gt; <span class="built_in">int</span>:</span><br><span class="line">    l, r = <span class="number">0</span>, <span class="built_in">len</span>(ary)</span><br><span class="line">    <span class="keyword">while</span> l &lt;= r:</span><br><span class="line">        mid = (l + r) // <span class="number">2</span>          <span class="comment"># python3的int理论上讲可以无限大，不需要担心溢出</span></span><br><span class="line">        <span class="keyword">if</span> ary[mid] &lt; target:</span><br><span class="line">            l = mid + <span class="number">1</span></span><br><span class="line">        <span class="keyword">elif</span> ary[mid] &gt; target:</span><br><span class="line">            r = mid - <span class="number">1</span></span><br><span class="line">        <span class="keyword">else</span>:</span><br><span class="line">            <span class="keyword">return</span> mid</span><br><span class="line">    <span class="keyword">return</span> -<span class="number">1</span></span><br></pre></td></tr></table></figure></div></div><div class="tab-pane" id="first-4"><div class="highlight-container" data-rel="Javascript"><figure class="iseeu highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@param</span> &#123;<span class="type">number[]</span>&#125; <span class="variable">ary</span></span></span><br><span class="line"><span class="comment"> * <span class="doctag">@return</span> &#123;<span class="type">number</span>&#125;</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="keyword">const</span> <span class="title function_">binarySearch</span> = (<span class="params"></span>) =&gt; &#123;</span><br><span class="line">    <span class="keyword">let</span> l = <span class="number">0</span>, r = ary.<span class="property">length</span>;</span><br><span class="line">    <span class="keyword">while</span>(l &lt;= r)&#123;</span><br><span class="line">        <span class="keyword">let</span> mid = l + <span class="title class_">Math</span>.<span class="title function_">floor</span>((r - l) / <span class="number">2</span>);</span><br><span class="line">        <span class="keyword">if</span>(ary[mid] &lt; target)&#123;        </span><br><span class="line">            left = mid + <span class="number">1</span>;           </span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">else</span> <span class="keyword">if</span>(ary[mid] &gt; target)&#123;</span><br><span class="line">            right = mid - <span class="number">1</span>;          </span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">else</span> &#123;</span><br><span class="line">            <span class="keyword">return</span> mid;</span><br><span class="line">        &#125;          </span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> -<span class="number">1</span>;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure></div></div></div></div>
-
+<blockquote>
+<p>ls(list) 列出目录内容</p>
+</blockquote>
 <ul>
-<li>因为二分查找每次查找都会使查找长度减半，第一次为n，第二次为n&#x2F;2，第三次为n&#x2F;2^2，…n&#x2F;2^k，…，其中k为循环次数，令n&#x2F;^k&#x3D;1，则k&#x3D;log2n，所以二分查找时间复杂度为O(logn)。</li>
-<li>由于使用了常数级辅助空间(l，r和mid)，所以空间复杂度为O(1)。</li>
+<li><p>基本语法</p>
+<ul>
+<li>ls [选项] [目录或是文件]</li>
 </ul>
-<h3 id="细节问题"><a href="#细节问题" class="headerlink" title="细节问题"></a>细节问题</h3><ul>
-<li>关于循环不变量：上面while循环中的条件是*l&lt;&#x3D;r*，也就是说我们的查找区间是一个闭区间[l,r]，在整个循环过程中都是如此(循环不变)，所以l和r都可以取到，因此l&#x3D;r时是有意义的；当mid处的值小于target时，由于ary[mid]是有意义的，所以下次循环我们比较的区间变为[mid + 1, r]而不是[mid, r];当ary[mid]&gt;target时同理。</li>
+</li>
+<li><p>选项说明</p>
+<table>
+<thead>
+<tr>
+<th>选项</th>
+<th>功能</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>-a</td>
+<td>全部的文件，连同隐藏档( 开头为 . 的文件) 一起列出来(常用)</td>
+</tr>
+<tr>
+<td>-l</td>
+<td>长数据串列出，包含文件的属性与权限等等数据；(常用)</td>
+</tr>
+</tbody></table>
+</li>
+<li><p>显示说明</p>
+<p>每行列出的信息依次是： 文件类型与权限 链接数 文件属主 文件属组 文件大小用byte来表示 建立或最近修改的时间 名字&amp;#x20;</p>
+</li>
+<li><p>实操案例</p>
+<ul>
+<li>查看当前目录的所有内容信息<div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line">[root@centos100 ~]# ls -al</span><br><span class="line">总用量 80</span><br><span class="line">dr-xr-x---. 15 root root 4096 11月  7 19:08 .</span><br><span class="line">dr-xr-xr-x. 17 root root  224 11月  3 20:18 ..</span><br><span class="line">-rw-------.  1 root root 1533 11月  3 20:19 anaconda-ks.cfg</span><br><span class="line">-rw-------.  1 root root 1996 11月  7 18:54 .bash_history</span><br><span class="line">-rw-r--r--.  1 root root   18 12月 29 2013 .bash_logout</span><br><span class="line">-rw-r--r--.  1 root root  176 12月 29 2013 .bash_profile</span><br><span class="line">-rw-r--r--.  1 root root  176 12月 29 2013 .bashrc</span><br><span class="line">drwx------. 15 root root 4096 11月  6 14:03 .cache</span><br><span class="line">drwxr-xr-x. 16 root root 4096 11月  6 17:00 .config</span><br><span class="line">-rw-r--r--.  1 root root  100 12月 29 2013 .cshrc</span><br><span class="line">drwx------.  3 root root   25 11月  3 20:25 .dbus</span><br><span class="line">-rw-------.  1 root root   16 11月  3 20:28 .esd_auth</span><br><span class="line">-rw-------.  1 root root 1550 11月  7 19:04 .ICEauthority</span><br><span class="line">-rw-r--r--.  1 root root 1581 11月  3 20:25 initial-setup-ks.cfg</span><br><span class="line">drwx------.  3 root root   19 11月  3 20:28 .local</span><br><span class="line">drwx------.  5 root root   66 11月  3 20:29 .mozilla</span><br><span class="line">-rw-r--r--.  1 root root 6939 11月  6 15:35 smartd1.conf</span><br><span class="line">-rw-r--r--.  1 root root 6792 11月  6 15:48 smartd.conf</span><br><span class="line">-rw-r--r--.  1 root root  129 12月 29 2013 .tcshrc</span><br><span class="line">-rw-------.  1 root root 4518 11月  7 19:08 .viminfo</span><br><span class="line">-rw-------.  1 root root  165 11月  7 18:55 .Xauthority</span><br></pre></td></tr></table></figure></div></li>
 </ul>
-<h2 id="结语"><a href="#结语" class="headerlink" title="结语"></a>结语</h2><ul>
-<li>到这里是不是对于二分查找有了更清晰的理解了呢，可以自己在本地或者推荐到<a class="link"   target="_blank" rel="noopener" href="https://c.runoob.com/" >菜鸟教程 <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a>的在线测试环境中用几个例子测试一下。</li>
-<li>一般来说，绝大多数情况下使用二分查找需要数组有序，特殊情况可以将数组用其他方法指标分类时可以无序。</li>
-<li>二分查找的区间还可以写为(l,r]，这种写法的循环条件以及判断条件和更新语句怎么写就可参照上面的分析方法去做，具体此处不再赘述。</li>
-<li>后续会更新具体的一道二分查找变体的题目，敬请期待。</li>
+</li>
+</ul>
+<blockquote>
+<p>cd(Change Directory)切换路径</p>
+</blockquote>
+<ul>
+<li><p>基本语法</p>
+<ul>
+<li>cd [参数]</li>
+</ul>
+</li>
+<li><p>参数说明</p>
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th>功能</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>cd 绝对路径</td>
+<td><strong>切换路径</strong></td>
+</tr>
+<tr>
+<td>cd 相对路径</td>
+<td><strong>切换路径</strong></td>
+</tr>
+<tr>
+<td>cd ~或者cd</td>
+<td>回到自己的家目录</td>
+</tr>
+<tr>
+<td>cd -</td>
+<td>回到上一次所在目录</td>
+</tr>
+<tr>
+<td>cd ..</td>
+<td>回到当前目录的上一级目录</td>
+</tr>
+<tr>
+<td>cd -P</td>
+<td>跳转到实际物理路径，而非快捷方式路径</td>
+</tr>
+<tr>
+<td>cd &#x2F;</td>
+<td>回到系统根目录</td>
+</tr>
+</tbody></table>
+</li>
+<li><p>实操案例</p>
+<ul>
+<li>使用绝对路径切换到root目录<div class="highlight-container" data-rel="Text"><figure class="iseeu highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[root@centos100 ~]# cd /root/</span><br></pre></td></tr></table></figure></div></li>
+<li>使用相对路径切换到“公共的”目录<div class="highlight-container" data-rel="Text"><figure class="iseeu highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[root@centos100 ~]# cd 公共的/</span><br></pre></td></tr></table></figure></div></li>
+<li>表示回到自己的家目录，亦即是 &#x2F;root 这个目录<div class="highlight-container" data-rel="Text"><figure class="iseeu highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[root@centos100 公共的]# cd ~</span><br></pre></td></tr></table></figure></div></li>
+<li>cd- 回到上一次所在目录<div class="highlight-container" data-rel="Text"><figure class="iseeu highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[root@centos100 ~]# cd -</span><br></pre></td></tr></table></figure></div></li>
+<li>表示回到当前目录的上一级目录，亦即是 “&#x2F;root&#x2F;公共的”的上一级目录的意思；<div class="highlight-container" data-rel="Text"><figure class="iseeu highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[root@centos100 公共的]# cd ..</span><br></pre></td></tr></table></figure></div></li>
+</ul>
+</li>
+</ul>
+<blockquote>
+<p>mkdir(Make directory) 建立目录</p>
+</blockquote>
+<ul>
+<li><p>基本语法</p>
+<ul>
+<li>mkdir [选项] 要创建的目录</li>
+</ul>
+</li>
+<li><p>选项说明</p>
+<table>
+<thead>
+<tr>
+<th>选项</th>
+<th>功能</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>-p</td>
+<td>创建多层目录</td>
+</tr>
+</tbody></table>
+</li>
+<li><p>实操案例</p>
+<ul>
+<li>创建一个目录<div class="highlight-container" data-rel="Text"><figure class="iseeu highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">[root@centos100 ~]# mkdir xiyou</span><br><span class="line"></span><br><span class="line">[root@centos100 ~]# mkdir xiyou/yaojing</span><br></pre></td></tr></table></figure></div></li>
+<li>创建一个多级目录<div class="highlight-container" data-rel="Text"><figure class="iseeu highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[root@centos100 ~]# mkdir -p xiyou/qujing/meihouwang</span><br></pre></td></tr></table></figure></div></li>
+</ul>
+</li>
+</ul>
+<blockquote>
+<p>rmdir(Remove directory) 删除目录</p>
+</blockquote>
+<ul>
+<li><p>基本语法</p>
+<ul>
+<li>rmdir 要删除的<strong>空目录</strong></li>
+</ul>
+</li>
+<li><p>实操案例</p>
+<ul>
+<li>删除一个空的文件夹<div class="highlight-container" data-rel="Text"><figure class="iseeu highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[root@centos100 ~]# rmdir xiyou/qujing/meihouwang</span><br></pre></td></tr></table></figure></div></li>
+</ul>
+</li>
+</ul>
+<blockquote>
+<p>&amp;#x20;touch 创建空文件</p>
+</blockquote>
+<ul>
+<li><p>基本语法</p>
+<ul>
+<li>touch 文件名称</li>
+</ul>
+</li>
+<li><p>实操案例</p>
+<div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[root@centos100 ~]# touch xiyou/qujing/sunwukong.txt</span><br></pre></td></tr></table></figure></div></li>
+</ul>
+<blockquote>
+<p>cp 复制文件或目录</p>
+</blockquote>
+<ul>
+<li><p>基本语法</p>
+<ul>
+<li>cp [选项] source dest             （功能描述：复制source文件到dest）</li>
+</ul>
+</li>
+<li><p>选项说明</p>
+<table>
+<thead>
+<tr>
+<th>选项</th>
+<th>功能</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>-r</td>
+<td>递归复制整个文件夹</td>
+</tr>
+</tbody></table>
+</li>
+<li><p>参数说明</p>
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th>功能</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>source</td>
+<td>源文件</td>
+</tr>
+<tr>
+<td>dest</td>
+<td>目标文件</td>
+</tr>
+</tbody></table>
+</li>
+<li><p>实操案例</p>
+<ul>
+<li>复制文件<div class="highlight-container" data-rel="Text"><figure class="iseeu highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[root@centos100 ~]# cp xiyou/qujing/suwukong.txt xiyou/mingjie/</span><br></pre></td></tr></table></figure></div></li>
+<li>递归复制整个文件夹<div class="highlight-container" data-rel="Text"><figure class="iseeu highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[root@centos100 ~]# cp -r a/b/ ./</span><br></pre></td></tr></table></figure></div></li>
+</ul>
+</li>
+<li><p>注意事项</p>
+<p>&amp;#x20;强制覆盖不提示的方法：\cp</p>
+</li>
+</ul>
+<blockquote>
+<p>rm移除文件或者目录</p>
+</blockquote>
+<ul>
+<li><p>基本语法</p>
+<ul>
+<li>rm [选项] deleteFile</li>
+</ul>
+</li>
+<li><p>选项说明</p>
+<table>
+<thead>
+<tr>
+<th>选项</th>
+<th>功能</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>-r</td>
+<td>递归删除目录所有内容</td>
+</tr>
+<tr>
+<td>-f</td>
+<td>强制删除,不提示用户进行确认</td>
+</tr>
+<tr>
+<td>-v</td>
+<td>显示指令的详细执行过程</td>
+</tr>
+</tbody></table>
+</li>
+<li><p>实操案例</p>
+<ul>
+<li>删除目录中的内容<div class="highlight-container" data-rel="Text"><figure class="iseeu highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[root@centos100 ~]# rm xiyou/mingjie/sunwukong.txt</span><br></pre></td></tr></table></figure></div></li>
+<li>递归删除目录中所有内容<div class="highlight-container" data-rel="Text"><figure class="iseeu highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[root@centos100 ~]# rm -rf  qujing/</span><br></pre></td></tr></table></figure></div></li>
+</ul>
+</li>
+</ul>
+<blockquote>
+<p>mv移动文件与目录或重命名</p>
+</blockquote>
+<ul>
+<li>基本语法<ul>
+<li>重命名&amp;#x20;<div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mv oldNameFile newNameFile</span><br></pre></td></tr></table></figure></div></li>
+<li>移动文件&amp;#x20;<div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mv /temp/movefile /targetFolder</span><br></pre></td></tr></table></figure></div></li>
+</ul>
+</li>
+<li>实操案例<ul>
+<li>重命名<div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[root@centos100 ~]# mv xiyou/qujing/suwukong.txt xiyou/qujing/houge.txt</span><br></pre></td></tr></table></figure></div></li>
+<li>移动文件<div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[root@centos100 ~]# mv xiyou/qujing/houge.txt ./</span><br></pre></td></tr></table></figure></div></li>
+</ul>
+</li>
+</ul>
+<blockquote>
+<p>cat查看文件内容</p>
+</blockquote>
+<ul>
+<li><p>基本语法</p>
+<ul>
+<li>cat  [选项] 文件     查看文件内容,从第一行开始显示</li>
+</ul>
+</li>
+<li><p>选项说明</p>
+<table>
+<thead>
+<tr>
+<th>选项</th>
+<th>功能描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>- n</td>
+<td>显示所有行的行号,包括空行</td>
+</tr>
+</tbody></table>
+</li>
+<li><p>经验技巧</p>
+<div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">一般查看比较小的文件,一屏幕能显示全的</span><br></pre></td></tr></table></figure></div></li>
+<li><p>实操案例</p>
+<ul>
+<li>查看文件内容并显示行号<div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[atguigu@centos100 ~]$ cat -n houge.txt </span><br></pre></td></tr></table></figure></div></li>
+</ul>
+</li>
+</ul>
+<blockquote>
+<p>more 文件分屏查看器</p>
+</blockquote>
+<ul>
+<li>基本语法<div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">more 要查看的文件</span><br><span class="line"></span><br></pre></td></tr></table></figure></div>
+<div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">more指令是一个基于VI编辑器的文本过滤器，它以全屏幕的方式按页显示文本文件的内容。more指令中内置了若干快捷键，详见操作说明。</span><br></pre></td></tr></table></figure></div></li>
+<li>操作说明<table>
+<thead>
+<tr>
+<th>操作</th>
+<th>功能说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>空白键 (space)</td>
+<td>代表向下翻一页；</td>
+</tr>
+<tr>
+<td>Enter</td>
+<td>代表向下翻『一行』；</td>
+</tr>
+<tr>
+<td>q</td>
+<td>代表立刻离开 more ，不再显示该文件内容。</td>
+</tr>
+<tr>
+<td>Ctrl+F</td>
+<td>向下滚动一屏</td>
+</tr>
+<tr>
+<td>Ctrl+B</td>
+<td>返回上一屏</td>
+</tr>
+<tr>
+<td>&#x3D;</td>
+<td>输出当前行的行号</td>
+</tr>
+<tr>
+<td>:f</td>
+<td>输出文件名和当前行的行号</td>
+</tr>
+</tbody></table>
+</li>
+<li>实操案例<ul>
+<li>（1）采用more查看文件<div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[root@centos100 ~]# more smartd.conf</span><br></pre></td></tr></table></figure></div></li>
+</ul>
+</li>
+</ul>
+<blockquote>
+<p>less 分屏显示文件内容</p>
+</blockquote>
+<ul>
+<li>基本语法<div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">less指令用来分屏查看文件内容，它的功能与more指令类似，但是比more指令更加强大，支持各种显示终端。less指令在显示文件内容时，并不是一次将整个文件加载之后才显示，而是根据显示需要加载内容，对于显示大型文件具有较高的效率。</span><br><span class="line"></span><br><span class="line">less 要查看的文件</span><br></pre></td></tr></table></figure></div></li>
+<li>操作说明<table>
+<thead>
+<tr>
+<th>操作</th>
+<th>功能说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>空白键</td>
+<td>向下翻动一页；</td>
+</tr>
+<tr>
+<td>[pagedown]</td>
+<td>向下翻动一页</td>
+</tr>
+<tr>
+<td>[pageup]</td>
+<td>向上翻动一页；</td>
+</tr>
+<tr>
+<td>&#x2F;字串</td>
+<td>向下搜寻『字串』的功能；n：向下查找；N：向上查找；</td>
+</tr>
+<tr>
+<td>?字串</td>
+<td>向上搜寻『字串』的功能；n：向上查找；N：向下查找；</td>
+</tr>
+<tr>
+<td>q</td>
+<td>离开 less 这个程序；</td>
+</tr>
+</tbody></table>
+</li>
+<li>实操案例<ul>
+<li>（1）采用less查看文件<div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[root@centos100 ~]# less smartd.conf</span><br></pre></td></tr></table></figure></div></li>
+</ul>
+</li>
+</ul>
+<blockquote>
+<p>head显示文件头部内容</p>
+</blockquote>
+<ul>
+<li>基本语法<div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">head用于显示文件的开头部分内容，默认情况下head指令显示文件的前10行内容。</span><br><span class="line"></span><br><span class="line">head 文件      （功能描述：查看文件头10行内容）</span><br><span class="line">head -n 5 文件   （功能描述：查看文件头5行内容，5可以是任意行数）</span><br></pre></td></tr></table></figure></div></li>
+<li>选项说明<table>
+<thead>
+<tr>
+<th>选项</th>
+<th>功能</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>-n &lt;行数&gt;</td>
+<td>指定显示头部内容的行数</td>
+</tr>
+</tbody></table>
+</li>
+<li>实操案例<ul>
+<li>（1）查看文件的头2行<div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[root@centos100 ~]# head -n 2 smartd.conf</span><br></pre></td></tr></table></figure></div></li>
+</ul>
+</li>
+</ul>
+<blockquote>
+<p>tail 输出文件尾部内容</p>
+</blockquote>
+<ul>
+<li>基本语法<div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">tail用于输出文件中尾部的内容，默认情况下tail指令显示文件的后10行内容。</span><br><span class="line">（1）tail 文件          （功能描述：查看文件后10行内容）</span><br><span class="line">（2）tail -n 5 文件     （功能描述：查看文件后5行内容，5可以是任意行数）</span><br><span class="line">（3）tail -f 文件      （功能描述：实时追踪该文档的所有更新）</span><br></pre></td></tr></table></figure></div></li>
+<li>选项说明<table>
+<thead>
+<tr>
+<th>选项</th>
+<th>功能</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>-n&lt;行数&gt;</td>
+<td>输出文件尾部n行内容</td>
+</tr>
+<tr>
+<td>-f</td>
+<td>显示文件最新追加的内容，监视文件变化</td>
+</tr>
+</tbody></table>
+</li>
+<li>实操案例<ul>
+<li>（1）查看文件头1行内容<div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[root@centos100 ~]# tail -n 1 smartd.conf </span><br></pre></td></tr></table></figure></div></li>
+<li>（2）实时追踪该档的所有更新<div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[root@centos100 ~]# tail -f houge.txt</span><br></pre></td></tr></table></figure></div></li>
+</ul>
+</li>
+</ul>
+<blockquote>
+<p>echo 打印信息</p>
+</blockquote>
+<ul>
+<li>基本语法<div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">echo输出内容到控制台  System.out.println();</span><br><span class="line"></span><br><span class="line">echo [选项] [输出内容]</span><br></pre></td></tr></table></figure></div></li>
+<li>选项说明<table>
+<thead>
+<tr>
+<th>选项</th>
+<th>功能</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>-e</td>
+<td>支持反斜线控制的字符转换</td>
+</tr>
+<tr>
+<td>控制字符</td>
+<td>作用</td>
+</tr>
+<tr>
+<td>—-</td>
+<td>———–</td>
+</tr>
+<tr>
+<td>\\</td>
+<td>输出\本身</td>
+</tr>
+<tr>
+<td>\n</td>
+<td>换行符</td>
+</tr>
+<tr>
+<td>\t</td>
+<td>制表符，也就是Tab键</td>
+</tr>
+</tbody></table>
+</li>
+<li>实操案例<ul>
+<li>(1) 打印文字信息<div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">[atguigu@centos100 ~]$ echo &quot;hello\tworld&quot;</span><br><span class="line">hello\tworld</span><br><span class="line">[atguigu@centos100 ~]$ echo -e &quot;hello\tworld&quot;</span><br><span class="line">hello   world</span><br></pre></td></tr></table></figure></div></li>
+<li>(2) 打印环境变量<div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[atguigu@centos100 ~]$ echo $PATH</span><br></pre></td></tr></table></figure></div></li>
+</ul>
+</li>
+</ul>
+<blockquote>
+<p>&gt; 覆盖和&gt;&gt;追加</p>
+</blockquote>
+<ul>
+<li>基本语法<div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">（1）ll &gt;文件       （功能描述：列表的内容写入文件a.txt中（**覆盖写**））</span><br><span class="line">（2）ll &gt;&gt;文件      （功能描述：列表的内容**追加**到文件aa.txt的末尾）</span><br><span class="line">（3）cat 文件1 &gt; 文件2 （功能描述：将文件1的内容覆盖到文件2）</span><br><span class="line">（4）echo “内容” &gt;&gt; 文件</span><br></pre></td></tr></table></figure></div></li>
+<li>实操案例<ul>
+<li>（1）将ls查看信息写入到文件中<div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[root@centos100 ~]# ls -l&gt;houge.txt</span><br></pre></td></tr></table></figure></div></li>
+<li>（2）将ls查看信息追加到文件中<div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[root@centos100 ~]# ls -l&gt;&gt;houge.txt</span><br></pre></td></tr></table></figure></div></li>
+<li>（3）采用echo将hello单词追加到文件中<div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[root@centos100 ~]# echo hello&gt;&gt;houge.txt</span><br></pre></td></tr></table></figure></div></li>
+</ul>
+</li>
+</ul>
+<blockquote>
+<p>ln创建链接和软连接</p>
+</blockquote>
+<ul>
+<li>基本语法<div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">链接表示目标资源的另外的访问方式,表示一种路径</span><br><span class="line">软链接也称为符号链接，类似于windows里的快捷方式，有自己的数据块，主要存放了链接其他文件的路径。</span><br><span class="line">ln [-s] [原文件或目录] [链接名]       （功能描述：给原文件创建一个链接）</span><br></pre></td></tr></table></figure></div></li>
+<li>选项说明<table>
+<thead>
+<tr>
+<th>选项</th>
+<th>功能</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>-s</td>
+<td>创建的链接为 软连接</td>
+</tr>
+</tbody></table>
+</li>
+<li>经验技巧<div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">删除软链接： rm -rf 软链接名，而不是rm -rf 软链接名/</span><br><span class="line">查询：通过ll就可以查看，列表属性第1位是l，尾部会有位置指向。</span><br></pre></td></tr></table></figure></div></li>
+<li>实操案例<ul>
+<li>（1）创建软连接<div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">[root@centos100 ~]# mv houge.txt xiyou/qujing/</span><br><span class="line">[root@centos100 ~]# ln -s /root/xiyou/qujing/houge.txt /root/houzi</span><br><span class="line">[root@centos100 ~]# ll</span><br><span class="line">lrwxrwxrwx. 1 root  root   20 6月 17 12:56 houzi -&gt; xiyou/qujing/houge.txt</span><br></pre></td></tr></table></figure></div></li>
+<li>（2）删除软连接<div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[root@centos100 ~]# rm -rf houzi</span><br></pre></td></tr></table></figure></div></li>
+<li>（3）进入软连接实际物理路径<div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">[root@centos100 ~]# ln -s xiyou/qujing/ ./qujing</span><br><span class="line">[root@centos100 ~]# cd -P qujing/</span><br></pre></td></tr></table></figure></div></li>
+</ul>
+</li>
+</ul>
+<blockquote>
+<p>history查看历史命令</p>
+</blockquote>
+<ul>
+<li>基本语法<div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">history                    （功能描述：查看已经执行过历史命令）</span><br></pre></td></tr></table></figure></div></li>
+<li>实操案例<ul>
+<li>（1）查看已经执行过的历史命令<div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[root@centos100 test1]# history</span><br></pre></td></tr></table></figure></div></li>
+<li>(2)   &#x2F;root&#x2F;.bash_history文件中也是历史命令<div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">less /root/.bash_history</span><br></pre></td></tr></table></figure></div></li>
+</ul>
+</li>
 </ul>
 
         </div>
@@ -721,18 +1232,18 @@
             <div class="post-copyright-info w-full my-8 px-2 sm:px-6 md:px-8">
                 <div class="article-copyright-info-container">
     <ul>
-        <li><strong>Title:</strong> 二分查找</li>
+        <li><strong>Title:</strong> Linux基本命令</li>
         <li><strong>Author:</strong> Locam</li>
         <li><strong>Created at
-                :</strong> 2023-03-21 23:12:59</li>
+                :</strong> 2024-02-20 22:27:17</li>
         
             <li>
                 <strong>Updated at
-                    :</strong> 2023-03-22 01:50:56
+                    :</strong> 2024-02-26 21:51:22
             </li>
         
         <li>
-            <strong>Link:</strong> https://locam.fun/yongjuns-hub/2023/03/21/algorithm/
+            <strong>Link:</strong> https://locam.fun/yongjuns-hub/2024/02/20/Linux基本命令/
         </li>
         <li>
             <strong>
@@ -754,7 +1265,7 @@
             <ul class="post-tags-box text-lg mt-1.5 flex-wrap justify-center flex md:hidden">
                 
                     <li class="tag-item mx-0.5">
-                        <a href="/yongjuns-hub/tags/BinarySearch/">#BinarySearch</a>&nbsp;
+                        <a href="/yongjuns-hub/tags/Linux/">#Linux</a>&nbsp;
                     </li>
                 
             </ul>
@@ -765,29 +1276,14 @@
         
             <div class="article-nav my-8 flex justify-between items-center px-2 sm:px-6 md:px-8">
                 
-                    <div class="article-prev border-border-color shadow-redefine-flat shadow-shadow-color-2 rounded-medium px-4 py-2 hover:shadow-redefine-flat-hover hover:shadow-shadow-color-2">
-                        <a class="prev"
-                        rel="prev"
-                        href="/yongjuns-hub/2024/02/20/Linux%E5%9F%BA%E6%9C%AC%E5%91%BD%E4%BB%A4/"
-                        >
-                            <span class="left arrow-icon flex justify-center items-center">
-                                <i class="fa-solid fa-chevron-left"></i>
-                            </span>
-                            <span class="title flex justify-center items-center">
-                                <span class="post-nav-title-item">Linux基本命令</span>
-                                <span class="post-nav-item">Prev posts</span>
-                            </span>
-                        </a>
-                    </div>
-                
                 
                     <div class="article-next border-border-color shadow-redefine-flat shadow-shadow-color-2 rounded-medium px-4 py-2 hover:shadow-redefine-flat-hover hover:shadow-shadow-color-2">
                         <a class="next"
                         rel="next"
-                        href="/yongjuns-hub/2023/03/13/test-page/"
+                        href="/yongjuns-hub/2023/03/21/algorithm/"
                         >
                             <span class="title flex justify-center items-center">
-                                <span class="post-nav-title-item">test-page</span>
+                                <span class="post-nav-title-item">二分查找</span>
                                 <span class="post-nav-item">Next posts</span>
                             </span>
                             <span class="right arrow-icon flex justify-center items-center">
@@ -862,8 +1358,8 @@
             <div class="post-toc-wrap">
     <div class="post-toc">
         <div class="toc-title">On this page</div>
-        <div class="page-title">二分查找</div>
-        <ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%85%B3%E4%BA%8E%E4%BA%8C%E5%88%86%E6%9F%A5%E6%89%BE"><span class="nav-text">关于二分查找</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%BB%A3%E7%A0%81%E5%AE%9E%E7%8E%B0"><span class="nav-text">代码实现</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%BB%86%E8%8A%82%E9%97%AE%E9%A2%98"><span class="nav-text">细节问题</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%BB%93%E8%AF%AD"><span class="nav-text">结语</span></a></li></ol>
+        <div class="page-title">Linux基本命令</div>
+        <ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%96%87%E4%BB%B6%E7%9B%AE%E5%BD%95%E7%B1%BB%E5%91%BD%E4%BB%A4"><span class="nav-text">文件目录类命令</span></a></li></ol>
 
     </div>
 </div>
